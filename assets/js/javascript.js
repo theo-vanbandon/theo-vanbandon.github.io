@@ -135,7 +135,7 @@ function afficherOutils() {
 
     // Si l'élément est "Gestion de projet", ajouter les langages en dessous
     if (elements[i] === "Gestion de projet") {
-      var langages = ["Git - GitLab", "Agile", "Markdown"];
+      var langages = ["Git", "Agile", "Markdown"];
 
       creerParagraphe(conteneur, langages);
     }
