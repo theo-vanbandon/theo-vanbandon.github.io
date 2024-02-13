@@ -22,8 +22,8 @@ function creerParagraphe(conteneur, langages) {
 function afficherCode() {
   // Créer un tableau avec les éléments
   var elements = [
-    "Web",
-    "Langages de programmation",
+    "Développement Web",
+    "Langages de programmation orientée objet",
     "Base de données",
     "Framework",
   ];
@@ -39,10 +39,10 @@ function afficherCode() {
     // Créer un paragraphe pour le texte de l'élément du tableau
     var paragraphe = document.createElement("p");
 
-    // Ajouter la classe "CompePara" au paragraphe si l'élément est "Web", "Langages de programmation", "Base de données", ou "Framework"
+    // Ajouter la classe "CompePara" au paragraphe si l'élément est "Développement Web", "Langages de programmation orientée objet", "Base de données", ou "Framework"
     if (
-      elements[i] === "Web" ||
-      elements[i] === "Langages de programmation" ||
+      elements[i] === "Développement Web" ||
+      elements[i] === "Langages de programmation orientée objet" ||
       elements[i] === "Base de données" ||
       elements[i] === "Framework"
     ) {
@@ -56,16 +56,16 @@ function afficherCode() {
     // Ajouter le paragraphe au conteneur
     conteneur.appendChild(paragraphe);
 
-    // Si l'élément est "Web", ajouter les langages en dessous
-    if (elements[i] === "Web") {
-      var langages = ["HTML", "CSS", "JavaScript", "PHP"];
+    // Si l'élément est "Développement Web", ajouter les langages en dessous
+    if (elements[i] === "Développement Web") {
+      var langages = ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"];
 
       creerParagraphe(conteneur, langages);
     }
 
-    // Si l'élément est "Langages de programmation", ajouter les langages en dessous
-    if (elements[i] === "Langages de programmation") {
-      var langages = ["C++", "Python", "Java"];
+    // Si l'élément est "Langages de programmation orientée objet", ajouter les langages en dessous
+    if (elements[i] === "Langages de programmation orientée objet") {
+      var langages = ["C++", "Python", "Java", "Kotlin (Développement Mobile - Android)"];
 
       creerParagraphe(conteneur, langages);
     }
@@ -79,7 +79,7 @@ function afficherCode() {
 
     // Si l'élément est "Framework", ajouter les langages en dessous
     if (elements[i] === "Framework") {
-      var langages = ["Laravel (PHP)", "CodeIgniter (PHP)", "Flask (Python)"];
+      var langages = ["Laravel (PHP)", "Angular (TypeScript)", "CodeIgniter (PHP)", "Flask (Python)"];
 
       creerParagraphe(conteneur, langages);
     }
@@ -128,6 +128,8 @@ function afficherOutils() {
         "IntelliJ IDEA",
         "PhpStorm",
         "PyCharm",
+        "WebStorm",
+        "Android Studio",
       ];
 
       creerParagraphe(conteneur, langages);
