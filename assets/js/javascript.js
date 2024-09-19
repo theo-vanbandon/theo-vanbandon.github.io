@@ -155,7 +155,7 @@ function afficherOutils() {
     // Si l'élément est "Logiciels", ajouter les langages en dessous
     if (elements[i] === "Logiciels") {
       var langages = [
-        "PhpMyAdmin",
+        "phpMyAdmin",
         "Visual Paradigm",
         "Looping-MCD",
         "Oracle VM VirtualBox",
