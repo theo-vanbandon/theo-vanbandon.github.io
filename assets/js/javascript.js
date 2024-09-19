@@ -22,10 +22,9 @@ function creerParagraphe(conteneur, langages) {
 function afficherCode() {
   // Créer un tableau avec les éléments
   var elements = [
-    "Développement Web",
-    "Langages de programmation orientée objet",
+    "Langages de programmation",
     "Base de données",
-    "Framework",
+    "Frameworks",
   ];
 
   // Sélectionner l'élément où vous souhaitez afficher les blocs dans le HTML
@@ -41,10 +40,9 @@ function afficherCode() {
 
     // Ajouter la classe "CompePara" au paragraphe si l'élément est "Développement Web", "Langages de programmation orientée objet", "Base de données", ou "Framework"
     if (
-      elements[i] === "Développement Web" ||
-      elements[i] === "Langages de programmation orientée objet" ||
+      elements[i] === "Langages de programmation" ||
       elements[i] === "Base de données" ||
-      elements[i] === "Framework"
+      elements[i] === "Frameworks"
     ) {
       paragraphe.classList.add("CompePara");
     }
@@ -56,30 +54,42 @@ function afficherCode() {
     // Ajouter le paragraphe au conteneur
     conteneur.appendChild(paragraphe);
 
-    // Si l'élément est "Développement Web", ajouter les langages en dessous
-    if (elements[i] === "Développement Web") {
-      var langages = ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"];
-
-      creerParagraphe(conteneur, langages);
-    }
-
-    // Si l'élément est "Langages de programmation orientée objet", ajouter les langages en dessous
-    if (elements[i] === "Langages de programmation orientée objet") {
-      var langages = ["C++", "Python", "Java", "Kotlin (Développement Mobile - Android)"];
+    // Si l'élément est "Langages de programmation", ajouter les langages en dessous
+    if (elements[i] === "Langages de programmation") {
+      var langages = ["PHP",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Python",
+        "C++",
+        "Kotlin"
+      ];
 
       creerParagraphe(conteneur, langages);
     }
 
     // Si l'élément est "Base de données", ajouter les langages en dessous
     if (elements[i] === "Base de données") {
-      var langages = ["phpMyAdmin", "MySQL", "PostgreSQL", "SQLite"];
+      var langages = ["MySQL",
+        "SQLite",
+        "MongoDB",
+        "PostgreSQL"
+      ];
 
       creerParagraphe(conteneur, langages);
     }
 
-    // Si l'élément est "Framework", ajouter les langages en dessous
-    if (elements[i] === "Framework") {
-      var langages = ["Laravel (PHP)", "Angular (TypeScript)", "CodeIgniter (PHP)", "Flask (Python)"];
+    // Si l'élément est "Frameworks", ajouter les langages en dessous
+    if (elements[i] === "Frameworks") {
+      var langages = ["Laravel (PHP)",
+        "Spring (Java)",
+        "React (JavaScript)",
+        "Angular (TypeScript)",
+        "CodeIgniter (PHP)",
+        "Flask (Python)"
+      ];
 
       creerParagraphe(conteneur, langages);
     }
@@ -145,7 +155,9 @@ function afficherOutils() {
     // Si l'élément est "Logiciels", ajouter les langages en dessous
     if (elements[i] === "Logiciels") {
       var langages = [
+        "PhpMyAdmin",
         "Visual Paradigm",
+        "Looping-MCD",
         "Oracle VM VirtualBox",
         "MindView",
         "Rufus",
