@@ -1896,6 +1896,12 @@ footer {
   color: white;
 }
 
+@media (max-width: 480px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
 .footer-content {
   display: flex;
   justify-content: space-around;
